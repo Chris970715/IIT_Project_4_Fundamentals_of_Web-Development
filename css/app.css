@@ -138,14 +138,14 @@ button:focus-visible {
 
 .site-nav .menu a {
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
-  padding: 0.9rem 0.6rem;
+  letter-spacing: 0.02em;
+  padding: 0.9rem 0.45rem;
 }
 
 .site-nav .menu a:hover,
-.site-nav .menu a:focus {
+.site-nav .menu a:focus-visible {
   background-color: #5b3a82;
   color: #f2b134;
 }
@@ -302,6 +302,10 @@ button:focus-visible {
   position: relative;
 }
 
+.job-body .bullets {
+  max-width: 42em;
+}
+
 .job-body::before {
   background-color: #2b193d;
   border: 0.1875rem solid #f2b134;
@@ -316,7 +320,7 @@ button:focus-visible {
 
 /* Projects */
 .project-card {
-  border: 0;
+  border: 0.0625rem solid #e2dbeb;
   border-top: 0.25rem solid #5b3a82;
   margin-bottom: 2.5rem;
 }
@@ -469,6 +473,8 @@ button:focus-visible {
   }
 
   .site-nav .menu a {
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
     padding: 1rem 0.9rem;
   }
 
