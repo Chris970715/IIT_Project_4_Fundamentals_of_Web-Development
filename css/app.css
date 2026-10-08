@@ -415,6 +415,24 @@ button:focus-visible {
   margin-bottom: 0.25rem;
 }
 
+/* ---------- Without JavaScript ---------- */
+
+/* app.js swaps the no-js class on <html> for js. Until then (or if
+   JavaScript is off), Orbit can't run, so show every screenshot in a column. */
+.no-js .orbit-container {
+  height: auto;
+}
+
+.no-js .orbit-slide {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.no-js .orbit-controls,
+.no-js .orbit-bullets {
+  display: none;
+}
+
 /* ---------- Tablets: 40em (640px) and up ---------- */
 
 @media screen and (min-width: 40em) {
