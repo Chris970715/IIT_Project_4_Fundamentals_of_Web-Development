@@ -39,9 +39,10 @@ The repository starts from the Project 4 starter files in the class repository (
 
 - The starter's `foundation.js` and `foundation.min.js` were development builds (about 550 KB each, run through `eval`). They were replaced with the official Foundation 6.8.0 release files, the same version as the starter's CSS.
 - The scripts load with `defer` from the `<head>`, in the order Foundation needs: jQuery, what-input, Foundation, then `app.js`.
+- One rule was removed from the Foundation CSS files (`foundation.css` and `foundation.min.css`): an old fix for Internet Explorer 9 and 10 in the `select` styles. It was the only CSS Validator error on the page, and no current browser uses it.
 
 ## Validation
 
 - HTML: the W3C Nu Html Checker reports no errors or warnings for `index.html`.
 - CSS: the W3C CSS Validator reports no errors for `css/app.css` (and for `css/normalize.css`).
-- Foundation's own `foundation.css` and `foundation.min.css` contain one CSS Validator error, so validating the whole page by its URL shows 1 error. It comes from an old Internet Explorer fix in Foundation's `select` styles (`@media screen and (min-width: 0\0)`), not from my code. Framework files shouldn't be edited, so it is left as it is.
+- The whole page also passes the CSS Validator by its link, including the Foundation CSS (see Changes to the starter files).
