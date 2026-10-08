@@ -39,6 +39,12 @@
       magellan.options.animationDuration = 0;
     }
 
+    // Images and fonts change the page's height after Magellan first measures
+    // it, so measure the section positions again once everything has loaded
+    $(window).on('load', function () {
+      magellan.reflow();
+    });
+
     // The bar's height changes with the screen width, so measure it again
     $(window).on('resize', function () {
       clearTimeout(resizeTimer);
