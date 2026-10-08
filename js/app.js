@@ -45,6 +45,17 @@
       magellan.reflow();
     });
 
+    // Magellan only updates the highlighted link when the page scrolls, and it
+    // ignores scrolling during its own animation. When the last section is too
+    // short to reach the top of the screen, the animation stops at the bottom
+    // of the page and the Education link would never light up. So check again
+    // once the animation has finished.
+    $('[data-magellan]').on('click', 'a[href^="#"]', function () {
+      setTimeout(function () {
+        magellan.reflow();
+      }, magellan.options.animationDuration + 50);
+    });
+
     // The bar's height changes with the screen width, so measure it again
     $(window).on('resize', function () {
       clearTimeout(resizeTimer);
