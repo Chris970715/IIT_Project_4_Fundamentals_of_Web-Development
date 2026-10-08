@@ -14,7 +14,7 @@ The repository starts from the Project 4 starter files in the class repository (
 - `css/normalize.css` - CSS reset (normalize.css v8.0.1, the same reset as Projects 2 and 3)
 - `css/foundation.min.css` - Foundation's CSS, linked by the page (`foundation.css` is the readable copy from the starter)
 - `css/app.css` - my own styles, linked after Foundation so they override it
-- `js/app.js` - my own JavaScript: starts Foundation's plugins
+- `js/app.js` - my own JavaScript: starts Foundation's plugins and slides the dot down the Experience timeline as the page scrolls
 - `js/vendor/` - jQuery, what-input, and Foundation's JavaScript
 - `media/` - photo, screenshots, and the AbleBridge video
 

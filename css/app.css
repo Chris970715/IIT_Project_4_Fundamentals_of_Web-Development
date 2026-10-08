@@ -332,6 +332,26 @@ button:focus-visible {
   width: 0.9rem;
 }
 
+/* app.js slides this dot along the timeline as the visitor scrolls.
+   The negative margins center it on the point app.js gives it. */
+.timeline {
+  position: relative;
+}
+
+.timeline-dot {
+  background-color: #3ccbb4;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.3rem rgba(60, 203, 180, 0.3);
+  height: 1.1rem;
+  left: 0;
+  margin: -0.55rem 0 0 -0.55rem;
+  position: absolute;
+  top: 0;
+  transition: transform 0.15s ease-out;
+  width: 1.1rem;
+  z-index: 1;
+}
+
 /* Projects */
 .project-card {
   border: 0.0625rem solid #dbe3e6;
@@ -464,7 +484,8 @@ button:focus-visible {
 }
 
 .no-js .orbit-controls,
-.no-js .orbit-bullets {
+.no-js .orbit-bullets,
+.no-js .timeline-dot {
   display: none;
 }
 
@@ -564,7 +585,8 @@ button:focus-visible {
   }
 
   .skill-list .grid-x,
-  .tags .label {
+  .tags .label,
+  .timeline-dot {
     transition: none;
   }
 }

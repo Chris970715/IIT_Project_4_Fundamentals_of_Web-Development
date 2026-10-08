@@ -66,6 +66,58 @@
     });
   }
 
+  // A dot slides down the Professional Experience timeline as the page
+  // scrolls. It stays level with the middle of the screen but never leaves
+  // the line: it waits on the first job's marker until the visitor scrolls
+  // that far, and stops at the end of the line. On phones each job has its
+  // own stretch of line, so between jobs the dot waits at the nearest end.
+  var timeline = document.querySelector('.timeline');
+  var timelineDot = document.querySelector('.timeline-dot');
+  var jobLines = document.querySelectorAll('.job-body');
+  var dotQueued = false;
+
+  function moveTimelineDot() {
+    var box = timeline.getBoundingClientRect();
+    var target = window.innerHeight / 2 - box.top;
+    // Each job's line starts at the middle of its marker (.job-body::before)
+    var marker = window.getComputedStyle(jobLines[0], '::before');
+    var markerMiddle = parseFloat(marker.top) + parseFloat(marker.height) / 2;
+    var closest = Infinity;
+    var x = 0;
+    var y = 0;
+
+    jobLines.forEach(function (line) {
+      var rect = line.getBoundingClientRect();
+      var start = rect.top - box.top + markerMiddle;
+      var end = rect.bottom - box.top - timelineDot.offsetHeight / 2;
+      var spot = Math.min(Math.max(target, start), end);
+
+      if (Math.abs(target - spot) < closest) {
+        closest = Math.abs(target - spot);
+        // clientLeft is the line's width, so this is the middle of the line
+        x = rect.left - box.left + line.clientLeft / 2;
+        y = spot;
+      }
+    });
+
+    timelineDot.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+    dotQueued = false;
+  }
+
+  // Scrolling fires many events per frame, so move the dot once per frame
+  function queueTimelineDot() {
+    if (!dotQueued) {
+      dotQueued = true;
+      window.requestAnimationFrame(moveTimelineDot);
+    }
+  }
+
+  if (timeline && timelineDot && jobLines.length) {
+    moveTimelineDot();
+    // Resizing and late-loading fonts move the line, so follow those too
+    $(window).on('scroll resize load', queueTimelineDot);
+  }
+
   // Keep the copyright year in the footer current
   var year = document.querySelector('.year');
 
