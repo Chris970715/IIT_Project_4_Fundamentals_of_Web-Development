@@ -105,6 +105,14 @@ button:focus-visible {
   font-size: 0.85rem;
   font-weight: 500;
   padding: 0.4rem 0.6rem;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+/* Like the buttons, each label changes color under the mouse */
+.tags .label:hover {
+  background-color: #0b7368;
+  border-left-color: #3ccbb4;
+  color: #ffffff;
 }
 
 /* Resume bullet lists: mint square markers instead of browser bullets */
@@ -272,19 +280,9 @@ button:focus-visible {
   transition: background-color 0.2s ease-out;
 }
 
-/* Hovering a row tints it and fills in its labels */
+/* Hovering a row tints it, light enough that its labels still stand out */
 .skill-list .grid-x:hover {
-  background-color: #e1f2ef;
-}
-
-.skill-list .label {
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-}
-
-.skill-list .grid-x:hover .label {
-  background-color: #0b7368;
-  border-left-color: #3ccbb4;
-  color: #ffffff;
+  background-color: #f3f6f7;
 }
 
 .skill-list dt {
@@ -566,7 +564,7 @@ button:focus-visible {
   }
 
   .skill-list .grid-x,
-  .skill-list .label {
+  .tags .label {
     transition: none;
   }
 }
