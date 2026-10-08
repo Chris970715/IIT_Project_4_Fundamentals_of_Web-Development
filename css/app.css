@@ -414,3 +414,89 @@ button:focus-visible {
 .school p {
   margin-bottom: 0.25rem;
 }
+
+/* ---------- Tablets: 40em (640px) and up ---------- */
+
+@media screen and (min-width: 40em) {
+  /* The navigation bar stays at the top of the screen while scrolling */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  /* Keeps section headings clear of the sticky bar when a link jumps to them */
+  section[id] {
+    scroll-margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .site-nav .menu a {
+    padding: 1rem 0.9rem;
+  }
+
+  .hero {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .portrait {
+    max-width: 16rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+  }
+
+  .skill-list dt {
+    margin-bottom: 0;
+    padding: 0.2rem 1rem 0 0;
+  }
+
+  .job-body {
+    margin: 0;
+  }
+
+  .section {
+    padding: 4rem 0 3rem;
+  }
+}
+
+/* ---------- Desktops: 64em (1024px) and up ---------- */
+
+@media screen and (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .site-nav .menu a {
+    font-size: 1rem;
+    padding: 1.05rem 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 4.25rem;
+  }
+
+  .hero .lead {
+    font-size: 1.5rem;
+  }
+
+  .two-columns {
+    column-count: 2;
+    column-gap: 2.5rem;
+  }
+
+  /* inline-block stops a bullet from splitting across the two columns */
+  .two-columns li {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .project .large-5 {
+    padding-left: 1.75rem;
+  }
+}
