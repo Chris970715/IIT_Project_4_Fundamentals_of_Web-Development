@@ -268,7 +268,23 @@ button:focus-visible {
 
 .skill-list .grid-x {
   border-top: 0.0625rem solid #dbe3e6;
-  padding: 0.85rem 0;
+  padding: 0.85rem 0.75rem;
+  transition: background-color 0.2s ease-out;
+}
+
+/* Hovering a row tints it and fills in its labels */
+.skill-list .grid-x:hover {
+  background-color: #e1f2ef;
+}
+
+.skill-list .label {
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.skill-list .grid-x:hover .label {
+  background-color: #0b7368;
+  border-left-color: #3ccbb4;
+  color: #ffffff;
 }
 
 .skill-list dt {
@@ -547,5 +563,10 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .orbit-slide.is-in {
     animation: none;
+  }
+
+  .skill-list .grid-x,
+  .skill-list .label {
+    transition: none;
   }
 }
