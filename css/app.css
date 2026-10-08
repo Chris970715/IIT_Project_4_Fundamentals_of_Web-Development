@@ -9,11 +9,11 @@
 /* ---------- Base ---------- */
 
 body {
-  background-color: #f3f6f7;
   color: #1c2329;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.0625rem;
   line-height: 1.65;
+  background-color: #f3f6f7;
 }
 
 h1,
@@ -38,22 +38,22 @@ h3 {
 }
 
 h2 {
-  font-size: 1.75rem;
   margin-bottom: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h2::after {
-  background-color: #3ccbb4;
   content: "";
   display: block;
+  width: 3rem;
   height: 0.25rem;
   margin-top: 0.5rem;
-  width: 3rem;
+  background-color: #3ccbb4;
 }
 
 h3 {
-  font-size: 1.25rem;
   margin-bottom: 0.35rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -75,19 +75,19 @@ button:focus-visible {
 /* ---------- Foundation components, restyled ---------- */
 
 .button {
-  background-color: #3ccbb4;
+  margin: 0;
   color: #17252f;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin: 0;
   text-decoration: none;
+  background-color: #3ccbb4;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #ffffff;
   color: #17252f;
+  background-color: #ffffff;
 }
 
 .tags {
@@ -99,20 +99,20 @@ button:focus-visible {
 }
 
 .tags .label {
-  background-color: #e1f2ef;
+  padding: 0.4rem 0.6rem;
   border-left: 0.1875rem solid #0b7368;
   color: #17252f;
   font-size: 0.85rem;
   font-weight: 500;
-  padding: 0.4rem 0.6rem;
+  background-color: #e1f2ef;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
 /* Like the buttons, each label changes color under the mouse */
 .tags .label:hover {
-  background-color: #0b7368;
   border-left-color: #3ccbb4;
   color: #ffffff;
+  background-color: #0b7368;
 }
 
 /* Resume bullet lists: mint square markers instead of browser bullets */
@@ -122,57 +122,57 @@ button:focus-visible {
 }
 
 .bullets li {
+  position: relative;
   margin-bottom: 0.5rem;
   padding-left: 1.25rem;
-  position: relative;
 }
 
 .bullets li::before {
-  background-color: #3ccbb4;
   content: "";
-  height: 0.45rem;
-  left: 0.15rem;
   position: absolute;
   top: 0.6rem;
+  left: 0.15rem;
   width: 0.45rem;
+  height: 0.45rem;
+  background-color: #3ccbb4;
 }
 
 /* ---------- Navigation ---------- */
 
 .site-header {
-  background-color: #17252f;
   border-bottom: 0.25rem solid #3ccbb4;
+  background-color: #17252f;
 }
 
 .site-nav .menu a {
+  padding: 0.9rem 0.45rem;
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  padding: 0.9rem 0.45rem;
 }
 
 .site-nav .menu a:hover,
 .site-nav .menu a:focus-visible {
-  background-color: #263845;
   color: #3ccbb4;
+  background-color: #263845;
 }
 
 /* Magellan (Foundation JavaScript) adds .is-active to the link for the section on screen */
 .site-nav .menu a.is-active {
-  background-color: #3ccbb4;
   color: #17252f;
+  background-color: #3ccbb4;
 }
 
 /* ---------- Footer ---------- */
 
 .site-footer {
-  background-color: #17252f;
+  padding: 1.75rem 0;
   border-top: 0.25rem solid #3ccbb4;
   color: #ffffff;
   font-size: 0.9rem;
-  padding: 1.75rem 0;
   text-align: center;
+  background-color: #17252f;
 }
 
 .site-footer p {
@@ -191,37 +191,37 @@ button:focus-visible {
 /* ---------- Hero and summary ---------- */
 
 .hero {
-  background-color: #17252f;
-  color: #ffffff;
   padding: 2rem 0 2.5rem;
+  color: #ffffff;
+  background-color: #17252f;
 }
 
 /* Mint frame with cut corners, echoing the angled corners of Chakra Petch */
 .portrait {
-  background-color: #3ccbb4;
-  clip-path: polygon(1.5rem 0, 100% 0, 100% calc(100% - 1.5rem), calc(100% - 1.5rem) 100%, 0 100%, 0 1.5rem);
   max-width: 10rem;
   padding: 0.375rem;
+  background-color: #3ccbb4;
+  clip-path: polygon(1.5rem 0, 100% 0, 100% calc(100% - 1.5rem), calc(100% - 1.5rem) 100%, 0 100%, 0 1.5rem);
 }
 
 .portrait img {
-  clip-path: polygon(1.35rem 0, 100% 0, 100% calc(100% - 1.35rem), calc(100% - 1.35rem) 100%, 0 100%, 0 1.35rem);
   display: block;
   width: 100%;
+  clip-path: polygon(1.35rem 0, 100% 0, 100% calc(100% - 1.35rem), calc(100% - 1.35rem) 100%, 0 100%, 0 1.35rem);
 }
 
 .hero h1 {
+  margin: 1.25rem 0 0.25rem;
   color: #ffffff;
   font-size: 2.75rem;
   letter-spacing: 0.01em;
-  margin: 1.25rem 0 0.25rem;
 }
 
 .hero .lead {
+  margin-bottom: 1rem;
   color: #3ccbb4;
   font-size: 1.3rem;
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .contact-list {
@@ -250,13 +250,13 @@ button:focus-visible {
 }
 
 .summary {
-  padding-bottom: 1.5rem;
   padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .summary p {
-  font-size: 1.15rem;
   max-width: 38em;
+  font-size: 1.15rem;
 }
 
 /* ---------- Sections ---------- */
@@ -275,8 +275,8 @@ button:focus-visible {
 }
 
 .skill-list .grid-x {
-  border-top: 0.0625rem solid #dbe3e6;
   padding: 0.85rem 0.75rem;
+  border-top: 0.0625rem solid #dbe3e6;
   transition: background-color 0.2s ease-out;
 }
 
@@ -286,10 +286,10 @@ button:focus-visible {
 }
 
 .skill-list dt {
+  margin-bottom: 0.5rem;
   color: #0b7368;
   font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
 }
 
 .skill-list dd {
@@ -298,22 +298,22 @@ button:focus-visible {
 
 /* Experience: a timeline line runs down the side of each job */
 .job-org {
+  margin-bottom: 0.25rem;
   color: #0b7368;
   font-weight: 700;
-  margin-bottom: 0.25rem;
 }
 
 .job-meta {
+  margin-bottom: 0;
   color: #56626b;
   font-size: 0.95rem;
-  margin-bottom: 0;
 }
 
 .job-body {
-  border-left: 0.1875rem solid #3ccbb4;
+  position: relative;
   margin: 1rem 0 0 0.4rem;
   padding: 0 0 2rem 1.5rem;
-  position: relative;
+  border-left: 0.1875rem solid #3ccbb4;
 }
 
 .job-body .bullets {
@@ -321,15 +321,15 @@ button:focus-visible {
 }
 
 .job-body::before {
-  background-color: #17252f;
-  border: 0.1875rem solid #3ccbb4;
-  border-radius: 50%;
   content: "";
-  height: 0.9rem;
-  left: -0.55rem;
   position: absolute;
   top: 0.35rem;
+  left: -0.55rem;
   width: 0.9rem;
+  height: 0.9rem;
+  border: 0.1875rem solid #3ccbb4;
+  border-radius: 50%;
+  background-color: #17252f;
 }
 
 /* app.js slides this dot along the timeline as the visitor scrolls.
@@ -339,31 +339,31 @@ button:focus-visible {
 }
 
 .timeline-dot {
-  background-color: #3ccbb4;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0.3rem rgba(60, 203, 180, 0.3);
-  height: 1.1rem;
-  left: 0;
-  margin: -0.55rem 0 0 -0.55rem;
   position: absolute;
   top: 0;
-  transition: transform 0.15s ease-out;
-  width: 1.1rem;
+  left: 0;
   z-index: 1;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: -0.55rem 0 0 -0.55rem;
+  border-radius: 50%;
+  background-color: #3ccbb4;
+  box-shadow: 0 0 0 0.3rem rgba(60, 203, 180, 0.3);
+  transition: transform 0.15s ease-out;
 }
 
 /* Projects */
 .project-card {
+  margin-bottom: 2.5rem;
   border: 0.0625rem solid #dbe3e6;
   border-top: 0.25rem solid #0b7368;
-  margin-bottom: 2.5rem;
 }
 
 .project-card .card-divider {
-  align-items: flex-start;
-  background-color: #f3f6f7;
   flex-direction: column;
+  align-items: flex-start;
   padding: 1.25rem 1.5rem 0.75rem;
+  background-color: #f3f6f7;
 }
 
 .project-card .card-section {
@@ -371,9 +371,9 @@ button:focus-visible {
 }
 
 .project-role {
+  margin-bottom: 0.75rem;
   color: #0b7368;
   font-weight: 500;
-  margin-bottom: 0.75rem;
 }
 
 .project {
@@ -386,15 +386,15 @@ button:focus-visible {
 
 .media-figure figcaption,
 .shot figcaption {
+  margin-top: 0.5rem;
   color: #56626b;
   font-size: 0.9rem;
   line-height: 1.4;
-  margin-top: 0.5rem;
 }
 
 .responsive-embed {
-  background-color: #17252f;
   margin-bottom: 0;
+  background-color: #17252f;
 }
 
 /* Foundation's embeds come in 4:3 and 16:9; the AbleBridge video is 1910 x 850 */
@@ -407,20 +407,20 @@ button:focus-visible {
 }
 
 .shot .thumbnail {
-  margin-bottom: 0;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .orbit {
-  background-color: #17252f;
   margin-bottom: 1.25rem;
+  background-color: #17252f;
 }
 
 .orbit-caption {
-  background-color: rgba(23, 37, 47, 0.88);
+  padding: 0.6rem 1rem;
   font-size: 0.9rem;
   line-height: 1.4;
-  padding: 0.6rem 1rem;
+  background-color: rgba(23, 37, 47, 0.88);
 }
 
 .orbit-previous,
@@ -429,9 +429,9 @@ button:focus-visible {
 }
 
 .orbit-bullets {
-  background-color: #ffffff;
   margin: 0;
   padding: 0.6rem 0;
+  background-color: #ffffff;
 }
 
 .orbit-bullets button {
@@ -461,9 +461,9 @@ button:focus-visible {
 
 /* Education */
 .callout.school {
+  padding: 1.25rem 1.5rem;
   border: 0;
   border-top: 0.25rem solid #0b7368;
-  padding: 1.25rem 1.5rem;
 }
 
 .school p {
@@ -479,8 +479,8 @@ button:focus-visible {
 }
 
 .no-js .orbit-slide {
-  margin-bottom: 0.5rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
 .no-js .orbit-controls,
@@ -509,9 +509,9 @@ button:focus-visible {
   }
 
   .site-nav .menu a {
+    padding: 1rem 0.9rem;
     font-size: 0.95rem;
     letter-spacing: 0.04em;
-    padding: 1rem 0.9rem;
   }
 
   .hero {
@@ -523,8 +523,8 @@ button:focus-visible {
   }
 
   .hero h1 {
-    font-size: 3.5rem;
     margin-top: 0;
+    font-size: 3.5rem;
   }
 
   .skill-list dt {
@@ -549,8 +549,8 @@ button:focus-visible {
   }
 
   .site-nav .menu a {
-    font-size: 1rem;
     padding: 1.05rem 1.25rem;
+    font-size: 1rem;
   }
 
   .hero h1 {
