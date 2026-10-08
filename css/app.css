@@ -179,3 +179,238 @@ button:focus-visible {
 .site-footer a:focus {
   color: #ffffff;
 }
+
+/* ---------- Hero and summary ---------- */
+
+.hero {
+  background-color: #2b193d;
+  color: #ffffff;
+  padding: 2rem 0 2.5rem;
+}
+
+/* Gold frame with cut corners, echoing the angled corners of Chakra Petch */
+.portrait {
+  background-color: #f2b134;
+  clip-path: polygon(1.5rem 0, 100% 0, 100% calc(100% - 1.5rem), calc(100% - 1.5rem) 100%, 0 100%, 0 1.5rem);
+  max-width: 10rem;
+  padding: 0.375rem;
+}
+
+.portrait img {
+  clip-path: polygon(1.35rem 0, 100% 0, 100% calc(100% - 1.35rem), calc(100% - 1.35rem) 100%, 0 100%, 0 1.35rem);
+  display: block;
+  width: 100%;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 2.75rem;
+  letter-spacing: 0.01em;
+  margin: 1.25rem 0 0.25rem;
+}
+
+.hero .lead {
+  color: #f2b134;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  list-style: none;
+  margin: 0 0 1.5rem;
+}
+
+.contact-list a {
+  color: #ffffff;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: #f2b134;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+}
+
+.summary {
+  padding-bottom: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.summary p {
+  font-size: 1.15rem;
+  max-width: 38em;
+}
+
+/* ---------- Sections ---------- */
+
+.section {
+  padding: 3rem 0 2rem;
+}
+
+.section-light {
+  background-color: #ffffff;
+}
+
+/* Skills: category on the left, labels on the right */
+.skill-list {
+  margin: 0;
+}
+
+.skill-list .grid-x {
+  border-top: 0.0625rem solid #e2dbeb;
+  padding: 0.85rem 0;
+}
+
+.skill-list dt {
+  color: #5b3a82;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.skill-list dd {
+  margin: 0;
+}
+
+/* Experience: a timeline line runs down the side of each job */
+.job-org {
+  color: #5b3a82;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.job-meta {
+  color: #5d5568;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.job-body {
+  border-left: 0.1875rem solid #f2b134;
+  margin: 1rem 0 0 0.4rem;
+  padding: 0 0 2rem 1.5rem;
+  position: relative;
+}
+
+.job-body::before {
+  background-color: #2b193d;
+  border: 0.1875rem solid #f2b134;
+  border-radius: 50%;
+  content: "";
+  height: 0.9rem;
+  left: -0.55rem;
+  position: absolute;
+  top: 0.35rem;
+  width: 0.9rem;
+}
+
+/* Projects */
+.project-card {
+  border: 0;
+  border-top: 0.25rem solid #5b3a82;
+  margin-bottom: 2.5rem;
+}
+
+.project-card .card-divider {
+  align-items: flex-start;
+  background-color: #f4f1f8;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 0.75rem;
+}
+
+.project-card .card-section {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.project-role {
+  color: #5b3a82;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.project {
+  margin-bottom: 2.5rem;
+}
+
+.media-figure {
+  margin: 0 0 1.25rem;
+}
+
+.media-figure figcaption,
+.shot figcaption {
+  color: #5d5568;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.responsive-embed {
+  background-color: #2b193d;
+  margin-bottom: 0;
+}
+
+/* Foundation's embeds come in 4:3 and 16:9; the AbleBridge video is 1910 x 850 */
+.responsive-embed.ultrawide {
+  padding-bottom: 44.5%;
+}
+
+.shot {
+  margin: 0 0 1rem;
+}
+
+.shot .thumbnail {
+  margin-bottom: 0;
+}
+
+.orbit {
+  background-color: #2b193d;
+  margin-bottom: 1.25rem;
+}
+
+.orbit-caption {
+  background-color: rgba(43, 25, 61, 0.88);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 0.6rem 1rem;
+}
+
+.orbit-previous,
+.orbit-next {
+  color: #f2b134;
+}
+
+.orbit-bullets {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0.6rem 0;
+}
+
+.orbit-bullets button {
+  background-color: #cfc6dc;
+}
+
+.orbit-bullets button:hover,
+.orbit-bullets button.is-active {
+  background-color: #5b3a82;
+}
+
+/* Education */
+.callout.school {
+  border: 0;
+  border-top: 0.25rem solid #5b3a82;
+  padding: 1.25rem 1.5rem;
+}
+
+.school p {
+  margin-bottom: 0.25rem;
+}
