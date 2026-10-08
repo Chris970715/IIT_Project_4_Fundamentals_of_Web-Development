@@ -9,8 +9,8 @@
 /* ---------- Base ---------- */
 
 body {
-  background-color: #f4f1f8;
-  color: #211c2b;
+  background-color: #f3f6f7;
+  color: #1c2329;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.0625rem;
   line-height: 1.65;
@@ -32,7 +32,7 @@ h3,
 h1,
 h2,
 h3 {
-  color: #2b193d;
+  color: #17252f;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -43,7 +43,7 @@ h2 {
 }
 
 h2::after {
-  background-color: #f2b134;
+  background-color: #3ccbb4;
   content: "";
   display: block;
   height: 0.25rem;
@@ -57,26 +57,26 @@ h3 {
 }
 
 a {
-  color: #5b3a82;
+  color: #0b7368;
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #2b193d;
+  color: #17252f;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 0.1875rem solid #f2b134;
+  outline: 0.1875rem solid #3ccbb4;
   outline-offset: 0.125rem;
 }
 
 /* ---------- Foundation components, restyled ---------- */
 
 .button {
-  background-color: #f2b134;
-  color: #2b193d;
+  background-color: #3ccbb4;
+  color: #17252f;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -87,7 +87,7 @@ button:focus-visible {
 .button:hover,
 .button:focus {
   background-color: #ffffff;
-  color: #2b193d;
+  color: #17252f;
 }
 
 .tags {
@@ -99,15 +99,15 @@ button:focus-visible {
 }
 
 .tags .label {
-  background-color: #ece6f4;
-  border-left: 0.1875rem solid #5b3a82;
-  color: #2b193d;
+  background-color: #e1f2ef;
+  border-left: 0.1875rem solid #0b7368;
+  color: #17252f;
   font-size: 0.85rem;
   font-weight: 500;
   padding: 0.4rem 0.6rem;
 }
 
-/* Resume bullet lists: gold square markers instead of browser bullets */
+/* Resume bullet lists: mint square markers instead of browser bullets */
 .bullets {
   list-style: none;
   margin: 0 0 1.25rem;
@@ -120,7 +120,7 @@ button:focus-visible {
 }
 
 .bullets li::before {
-  background-color: #f2b134;
+  background-color: #3ccbb4;
   content: "";
   height: 0.45rem;
   left: 0.15rem;
@@ -132,8 +132,8 @@ button:focus-visible {
 /* ---------- Navigation ---------- */
 
 .site-header {
-  background-color: #2b193d;
-  border-bottom: 0.25rem solid #f2b134;
+  background-color: #17252f;
+  border-bottom: 0.25rem solid #3ccbb4;
 }
 
 .site-nav .menu a {
@@ -146,21 +146,21 @@ button:focus-visible {
 
 .site-nav .menu a:hover,
 .site-nav .menu a:focus-visible {
-  background-color: #5b3a82;
-  color: #f2b134;
+  background-color: #263845;
+  color: #3ccbb4;
 }
 
 /* Magellan (Foundation JavaScript) adds .is-active to the link for the section on screen */
 .site-nav .menu a.is-active {
-  background-color: #f2b134;
-  color: #2b193d;
+  background-color: #3ccbb4;
+  color: #17252f;
 }
 
 /* ---------- Footer ---------- */
 
 .site-footer {
-  background-color: #2b193d;
-  border-top: 0.25rem solid #f2b134;
+  background-color: #17252f;
+  border-top: 0.25rem solid #3ccbb4;
   color: #ffffff;
   font-size: 0.9rem;
   padding: 1.75rem 0;
@@ -172,7 +172,7 @@ button:focus-visible {
 }
 
 .site-footer a {
-  color: #f2b134;
+  color: #3ccbb4;
 }
 
 .site-footer a:hover,
@@ -183,14 +183,14 @@ button:focus-visible {
 /* ---------- Hero and summary ---------- */
 
 .hero {
-  background-color: #2b193d;
+  background-color: #17252f;
   color: #ffffff;
   padding: 2rem 0 2.5rem;
 }
 
-/* Gold frame with cut corners, echoing the angled corners of Chakra Petch */
+/* Mint frame with cut corners, echoing the angled corners of Chakra Petch */
 .portrait {
-  background-color: #f2b134;
+  background-color: #3ccbb4;
   clip-path: polygon(1.5rem 0, 100% 0, 100% calc(100% - 1.5rem), calc(100% - 1.5rem) 100%, 0 100%, 0 1.5rem);
   max-width: 10rem;
   padding: 0.375rem;
@@ -210,7 +210,7 @@ button:focus-visible {
 }
 
 .hero .lead {
-  color: #f2b134;
+  color: #3ccbb4;
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -230,7 +230,7 @@ button:focus-visible {
 
 .contact-list a:hover,
 .contact-list a:focus {
-  color: #f2b134;
+  color: #3ccbb4;
 }
 
 .hero-links {
@@ -267,12 +267,12 @@ button:focus-visible {
 }
 
 .skill-list .grid-x {
-  border-top: 0.0625rem solid #e2dbeb;
+  border-top: 0.0625rem solid #dbe3e6;
   padding: 0.85rem 0;
 }
 
 .skill-list dt {
-  color: #5b3a82;
+  color: #0b7368;
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -284,19 +284,19 @@ button:focus-visible {
 
 /* Experience: a timeline line runs down the side of each job */
 .job-org {
-  color: #5b3a82;
+  color: #0b7368;
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
 
 .job-meta {
-  color: #5d5568;
+  color: #56626b;
   font-size: 0.95rem;
   margin-bottom: 0;
 }
 
 .job-body {
-  border-left: 0.1875rem solid #f2b134;
+  border-left: 0.1875rem solid #3ccbb4;
   margin: 1rem 0 0 0.4rem;
   padding: 0 0 2rem 1.5rem;
   position: relative;
@@ -307,8 +307,8 @@ button:focus-visible {
 }
 
 .job-body::before {
-  background-color: #2b193d;
-  border: 0.1875rem solid #f2b134;
+  background-color: #17252f;
+  border: 0.1875rem solid #3ccbb4;
   border-radius: 50%;
   content: "";
   height: 0.9rem;
@@ -320,14 +320,14 @@ button:focus-visible {
 
 /* Projects */
 .project-card {
-  border: 0.0625rem solid #e2dbeb;
-  border-top: 0.25rem solid #5b3a82;
+  border: 0.0625rem solid #dbe3e6;
+  border-top: 0.25rem solid #0b7368;
   margin-bottom: 2.5rem;
 }
 
 .project-card .card-divider {
   align-items: flex-start;
-  background-color: #f4f1f8;
+  background-color: #f3f6f7;
   flex-direction: column;
   padding: 1.25rem 1.5rem 0.75rem;
 }
@@ -337,7 +337,7 @@ button:focus-visible {
 }
 
 .project-role {
-  color: #5b3a82;
+  color: #0b7368;
   font-weight: 500;
   margin-bottom: 0.75rem;
 }
@@ -352,14 +352,14 @@ button:focus-visible {
 
 .media-figure figcaption,
 .shot figcaption {
-  color: #5d5568;
+  color: #56626b;
   font-size: 0.9rem;
   line-height: 1.4;
   margin-top: 0.5rem;
 }
 
 .responsive-embed {
-  background-color: #2b193d;
+  background-color: #17252f;
   margin-bottom: 0;
 }
 
@@ -378,12 +378,12 @@ button:focus-visible {
 }
 
 .orbit {
-  background-color: #2b193d;
+  background-color: #17252f;
   margin-bottom: 1.25rem;
 }
 
 .orbit-caption {
-  background-color: rgba(43, 25, 61, 0.88);
+  background-color: rgba(23, 37, 47, 0.88);
   font-size: 0.9rem;
   line-height: 1.4;
   padding: 0.6rem 1rem;
@@ -391,7 +391,7 @@ button:focus-visible {
 
 .orbit-previous,
 .orbit-next {
-  color: #f2b134;
+  color: #3ccbb4;
 }
 
 .orbit-bullets {
@@ -401,12 +401,12 @@ button:focus-visible {
 }
 
 .orbit-bullets button {
-  background-color: #cfc6dc;
+  background-color: #c3cfd4;
 }
 
 .orbit-bullets button:hover,
 .orbit-bullets button.is-active {
-  background-color: #5b3a82;
+  background-color: #0b7368;
 }
 
 /* Orbit adds .is-in to a slide only when the visitor changes slides,
@@ -428,7 +428,7 @@ button:focus-visible {
 /* Education */
 .callout.school {
   border: 0;
-  border-top: 0.25rem solid #5b3a82;
+  border-top: 0.25rem solid #0b7368;
   padding: 1.25rem 1.5rem;
 }
 
