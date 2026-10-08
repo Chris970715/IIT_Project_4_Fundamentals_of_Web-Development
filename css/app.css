@@ -374,6 +374,7 @@ button:focus-visible {
 
 .shot .thumbnail {
   margin-bottom: 0;
+  width: 100%;
 }
 
 .orbit {
